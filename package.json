@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ShitalSB/ToolsFinalProject#readme",
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0"
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.4"
   }
 }
