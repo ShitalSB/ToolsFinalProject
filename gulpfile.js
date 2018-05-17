@@ -29,3 +29,16 @@ gulp.task('js',function(){
         .pipe(uglify())
         .pipe(gulp.dest('dist/js/'))
 });
+
+
+gulp.task('cssMinify', function() {
+    gulp.src('./src/css/**/*.css')
+        .pipe(cleanCSS({
+            compatibility: 'ie8'
+        }))
+        .pipe(gulp.dest('./dist/css/'))
+});
+
+gulp.task('watchCssfiles', function() {
+    gulp.watch('./src/css/*.css', ['cssMinify'])
+});
