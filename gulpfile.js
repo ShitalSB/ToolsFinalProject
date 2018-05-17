@@ -42,3 +42,5 @@ gulp.task('cssMinify', function() {
 gulp.task('watchCssfiles', function() {
     gulp.watch('./src/css/*.css', ['cssMinify'])
 });
+
+gulp.task('default',['css','js','images','watchCssfiles'])
